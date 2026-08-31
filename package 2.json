@@ -1,0 +1,31 @@
+{
+  "name": "dsmb_personal_profile",
+  "version": "1.0.0",
+  "description": "A web page that displays all my work and projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsmb95/dsmb_personal_profile.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/dsmb95/dsmb_personal_profile/issues"
+  },
+  "homepage": "https://github.com/dsmb95/dsmb_personal_profile#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "method-override": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
