@@ -1,0 +1,12 @@
+.container {
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.footerIcon {
+    height: 30px;
+    color: #4a3b52;
+    margin: 10px;
+}

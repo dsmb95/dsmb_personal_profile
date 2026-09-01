@@ -1,0 +1,58 @@
+.introContainer {
+    margin: auto;
+    width: 700px;
+}
+
+.profilePicture {
+    width: 200px;
+    border-radius: 100px;
+    margin: auto;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+}
+
+.introStatement {
+    margin: 60px, 0px, 0px, 0px;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #36454f
+}
+
+.projectsContainer {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    margin: 20px;
+    padding: 1px;
+}
+
+.projectsHeader {
+    text-align: center;
+    color: #4a3b52;
+    font-weight: bold;
+    margin: 20px;
+    font-size: 40px;
+}
+
+.projectsAnchor {
+    text-decoration: none;
+    color: inherit;
+}
+
+.projectsImgContainer {
+    margin: auto;
+    align-content: center;
+    padding: 40px;
+    display: flex;
+}
+
+.projectsImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    outline: solid #4a3b52;
+    margin: 50px;
+}
+

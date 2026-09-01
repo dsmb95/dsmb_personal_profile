@@ -1,124 +1,51 @@
-import Menu from "../components/menu.jsx";
+import Menu from "../components/Menu.jsx";
+import Footer from "../components/Footer.jsx";
 import dsmbImage from "../assets/dsmb.JPG";
 import mypmosbuddy from "../assets/mypmosbuddy.png";
-import mynotetaking from "../assets/my note app.png"
+import mynotetaking from "../assets/my note app.png";
+import styles from "../styles/Home.module.css";
 
 function Home() {
   return (
     <div style={{ margin: "100px" }}>
       <Menu />
-      <div style={{ width: "900px", display: "flex", margin:"auto"}}>
+      <section className={styles.introContainer}>
         <img
           src={dsmbImage}
           alt="Profile picture"
-          style={{ width: "200px", borderRadius: "100px" }}
+          className={styles.profilePicture}
         />
-        <p
-          style={{
-            marginTop: "60px",
-            textAlign: "center",
-            padding: "20px",
-            fontFamily: "Alata",
-            fontSize: "18px",
-            color: "#36454f"
-          }}
-        >
+        <p className={styles.introStatement}>
           Hi, I am Sam, a full-stack software developer from Victoria, BC. I
           have a background in healthcare and my focus is building scalable
           programs that help solve real-world problems. I am incredibly
           passionate about blending the world of health care and programming to
           produce solutions to everyday health care problems.
         </p>
-      </div>
+      </section>
 
-      <div
-        style={{
-          alignText: "center",
-          justifyContent: "center",
-          alignSelf: "center",
-          margin: "20px",
-          padding: "1px",
-          backgroundColor: "#dccde2",
-          borderRadius: "10px",
-        }}
-      >
-        <h2
-          style={{
-            backgroundColor: "transparent",
-            fontFamily: "Alata",
-            textAlign: "center",
-            color: "#4a3b52",
-            fontWeight: "bold",
-            margin: "20px",
-            fontSize: "30px",
-          }}
-        >
-          Projects
-        </h2>
-      </div>
-      <a
-        href="https://my-pmos-buddy-frontend.onrender.com"
-        style={{
-          textDecoration: "none",
-          color: "inherit",
-        }}
-      >
-        <div style={{ margin: "auto", padding: "40px" }}>
-          <div style={{ display: "flex", marginBottom:"20px" }}>
-            <img
-              src={mypmosbuddy}
-              style={{
-                width: "200px",
-                height: "200px",
-                borderRadius: "10px",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            />
-            <p
-              style={{
-                marginTop: "55px",
-                textAlign: "left",
-                marginLeft: "20px",
-                fontFamily: "Alata",
-                fontSize: "18px",
-                color: "#36454f",
-                padding: "30px"
-              }}
-            >
-              A full-stack health tracking web application that allows women to
-              monitor personal health patterns, symptoms, and treatments.
-              Especially those who are diagnosed with PMOS (Polymetabolic
-              Ovarian Syndrome).
-            </p>
-          </div>
-          <div style={{ display: "flex", marginBottom:"20px" }}>
-            <img
-              src={mynotetaking}
-              style={{
-                width: "200px",
-                height: "200px",
-                borderRadius: "10px",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            />
-            <p
-              style={{
-                marginTop: "55px",
-                textAlign: "left",
-                margin: "auto",
-                fontFamily: "Alata",
-                fontSize: "18px",
-                color: "#36454f",
-                padding: "30px"
-              }}
-            >
-              A full-stack note-taking web application.
-            </p>
-          </div>
-        </div>
-      </a>
+      <section className={styles.projectsContainer}>
+        <h2 className={styles.projectsHeader}>Projects</h2>
+        <article className={styles.projectsImgContainer}>
+          <a
+            href="https://my-pmos-buddy-frontend.onrender.com"
+            className={styles.projectsAnchor}
+            target="_blank"
+          >
+            <img src={mypmosbuddy} className={styles.projectsImg} />
+          </a>
+
+          <a
+            href="https://my-note-taking-app.onrender.com"
+            className={styles.projectsAnchor}
+            target="_blank"
+          >
+            <img src={mynotetaking} className={styles.projectsImg} />
+          </a>
+        </article>
+      </section>
+
+      <Footer/>
     </div>
   );
 }

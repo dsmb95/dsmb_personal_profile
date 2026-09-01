@@ -1,0 +1,88 @@
+.header {
+    text-align: center;
+    color: #4a3b52;
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 35px;
+
+}
+
+.content {
+    text-align: center;
+    font-size: 15px;
+    color: #36454f;
+    padding: 10px;
+}
+
+.skillsCarousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.skillsImg {
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.skillsCard {
+  width: 450px;
+  height: 350px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid #36454f;
+  border-radius: 10px;
+  padding: 40px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  animation: slideIn 0.4s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.skillTitle {
+  font-size: 23px;
+}
+
+.carouselButton {
+  border: none;
+  background-color: #dccde2;
+  color: #4a3b52;
+  border-radius: 50%;
+  font-size: 32px;
+  line-height: 1;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+}
+
+.carouselButton:hover {
+  background-color: #4a3b52;
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .skillsCarousel {
+    gap: 8px;
+  }
+
+  .skillsCard {
+    padding: 20px;
+  }
+}
