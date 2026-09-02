@@ -7,6 +7,30 @@
 
 }
 
+.introContainer {
+    display: inline-flex;
+    margin: 60px 100px 60px 100px;
+}
+
+.introImg {
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid #36454f;
+}
+
+.introContentHeader {
+    padding: 60px;
+}
+
+.introContent {
+    padding: 60px;
+}
+
+.contentContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .content {
     text-align: center;
     font-size: 15px;
@@ -26,6 +50,13 @@
 .skillsImg {
     display: block;
     width: 70px;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.projectsImg {
+    display: block;
+    width: 200px;
     margin: 0 auto;
     align-self: center;
 }

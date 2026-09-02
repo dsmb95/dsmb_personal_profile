@@ -48,11 +48,17 @@
     display: flex;
 }
 
+.projectsAnchor:hover .projectsImg {
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px rgba(74, 59, 82, 0.35)
+}
+
 .projectsImg {
     width: 200px;
     height: 200px;
     border-radius: 10px;
     outline: solid #4a3b52;
     margin: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
