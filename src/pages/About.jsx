@@ -123,7 +123,7 @@ function About() {
     setCurrentExperience((prev) => (prev + 1) % experiences.length);
   };
 
-  // Carousel function for credentials
+  // Carousel function for projects
   const showPreviousProject = () => {
     setCurrentProject((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
   };
@@ -142,14 +142,14 @@ function About() {
               <img src={profilePicture} className={styles.introImg} />
             </div>
             <div className={styles.introContent}>
-              <h3>Hi there! I'm Sam</h3>
+              <h3>Hi there! I'm Sam.</h3>
               <p>
-                Hi there, I am Sam! I have a background in healthcare and my
-                focus is building scalable programs that help solve real-world
-                problems. I specialize in building full-stack applicaitons using
-                the MERN stack (MongoDB, Express.js, React, Node.js). I am
-                incredibly passionate about blending the world of health care
-                and programming to produce solutions to everyday health care
+                I have a background in healthcare and my focus is building
+                scalable programs that help solve real-world problems. I
+                specialize in building full-stack applicaitons using the MERN
+                stack (MongoDB, Express.js, React, Node.js). I am incredibly
+                passionate about blending the world of health care and
+                programming to produce solutions to everyday health care
                 problems.
               </p>
             </div>
@@ -288,19 +288,15 @@ function About() {
               </button>
 
               <div key={currentProject} className={styles.skillsCard}>
-                <a href={projects[currentProject].link}
-                target="_blank"
-                style={{textDecoration: "none"}}
+                <a
+                  href={projects[currentProject].link}
+                  target="_blank"
+                  style={{ textDecoration: "none" }}
                 >
-                <img
-                  src={projects[currentProject].img}
-                  className={styles.projectsImg}
-                />
-                <p className={styles.content}>
-                  <strong className={styles.skillTitle}>
-                    {projects[currentProject].title}
-                  </strong>
-                </p>
+                  <img
+                    src={projects[currentProject].img}
+                    className={styles.projectsImg}
+                  />
                 </a>
               </div>
 
