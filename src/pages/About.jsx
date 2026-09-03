@@ -134,7 +134,7 @@ function About() {
 
   return (
     <>
-      <div style={{ margin: "100px" }}>
+      <div className={styles.page}>
         <Menu />
         <article>
           <section className={styles.introContainer}>

@@ -27,3 +27,36 @@
 .content {
     padding: 50px;
 }
+
+@media (max-width: 700px) {
+    .page {
+        width: 100%;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .mainContainer {
+        margin: 40px 20px;
+    }
+
+    .contentContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectImg {
+        width: min(250px, 80vw);
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content {
+        padding: 10px;
+        text-align: center;
+    }
+}
+.page {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 20px;
+}

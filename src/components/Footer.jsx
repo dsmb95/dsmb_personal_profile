@@ -14,7 +14,7 @@ function Footer() {
           <a href="https://github.com/dsmb95" target="_blank">
             <img src={gitIcon} className={styles.footerIcon} />
           </a>
-          <a href="www.linkedin.com/in/dsmananquil" target="_blank">
+          <a href="https://www.linkedin.com/in/dsmananquil/" target="_blank">
             <img src={linkedIcon} className={styles.footerIcon} />
           </a>
         </address>

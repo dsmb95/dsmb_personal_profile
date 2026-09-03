@@ -2,4 +2,5 @@ body {
   margin: 0;
   background-color: #fdfbf7;
   font-family: Alata;
+  overflow-x: hidden;
 }

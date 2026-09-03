@@ -8,7 +8,7 @@ import myweather from "../assets/My Weather App.png";
 function Projects() {
   return (
     <>
-      <div style={{ margin: "100px" }}>
+      <div className={styles.page}>
         <Menu />
         <article>
           <section className={styles.mainContainer}>

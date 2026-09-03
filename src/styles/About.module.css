@@ -109,11 +109,55 @@
 }
 
 @media (max-width: 600px) {
+  .page {
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .contentContainer {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contentContainer > section {
+    width: 100%;
+    margin: 0 auto 70px !important;
+  }
+
   .skillsCarousel {
+    width: 100%;
     gap: 8px;
   }
 
   .skillsCard {
+    width: min(450px, calc(100vw - 120px));
     padding: 20px;
   }
+
+  .introContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 20px;
+    text-align: center;
+  }
+
+  .introContent {
+    padding: 0;
+  }
+
+  .introImg {
+    width: min(200px, 70vw);
+  }
+
+  .skillsImg,
+  .projectsImg {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.page {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
 }

@@ -11,7 +11,16 @@
 .contactContent {
     display: flex;
     justify-content: center;
-    padding: 10px; 
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color:inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.contactContent:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px rgba(74, 59, 82, 0.35);
 }
 
 .contactImg {
@@ -63,6 +72,12 @@
 }
 
 @media (max-width: 700px) {
+    .page {
+        width: 100%;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
     .sectionContainer,
     .formSection {
         margin: 40px 20px;
@@ -76,4 +91,9 @@
     .formField {
         padding: 22px;
     }
+}
+.page {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 20px;
 }

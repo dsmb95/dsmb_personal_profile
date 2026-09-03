@@ -1,16 +1,29 @@
-# React + Vite
+# Danielle Samantha's Web Page (Portfolio)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React web page for my personal portfolio.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is my personal developer portfolio website, built to showcase my background, technical skills, education, experience, and software development projects.
 
-## React Compiler
+The website was created with React and Vite and includes responsive layouts for desktop and mobile devices. It features interactive carousels for my skills, education, experience, and project previews, as well as a contact form powered by EmailJS that allows visitors to send me messages directly.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The design focuses on accessibility, responsive user experience, and clean navigation so visitors can easily learn about my work and connect with me.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- React Router
+- CSS Modules
+- Material UI
+- EmailJS
+
+## Features
+
+- Responsive mobile and desktop design
+- Dropdown mobile navigation
+- Skills, education, and experience carousels
+- Project showcase with external links
+- EmailJS contact form
+- Success and error form alerts

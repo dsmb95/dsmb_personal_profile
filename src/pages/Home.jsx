@@ -1,23 +1,35 @@
 import Menu from "../components/Menu.jsx";
 import Footer from "../components/Footer.jsx";
-import mypmosbuddy from "../assets/mypmosbuddy.png";
-import mynotetaking from "../assets/my note app.png";
 import styles from "../styles/Home.module.css";
-import myweather from "../assets/My Weather App.png";
+import profilePicture from "../assets/dsmb.JPG";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div style={{ margin: "100px" }}>
+    <div className={styles.homePage}>
       <Menu />
-      <section className={styles.introContainer}>
-        <p className={styles.introStatement}>
-          Hi, I am Sam, a full-stack software developer from Victoria, BC.
-          Welcome to my web page, feel free to look through my projects and
-          connect for employment or partnerships!
-        </p>
+
+      <section className={styles.hero}>
+        <div className={styles.heroContent}>
+          <p className={styles.heroGreeting}>Hi, I&apos;m Sam.</p>
+          <h1>Building thoughtful solutions through code and healthcare.</h1>
+          <p className={styles.heroStatement}>
+            I&apos;m a full-stack developer from Victoria, BC, passionate about
+            creating practical, user-focused applications.
+          </p>
+          <div className={styles.heroButtons}>
+            <Link to="/projects">View my projects</Link>
+            <Link to="/contact">Get in touch</Link>
+          </div>
+        </div>
+        <img
+          src={profilePicture}
+          alt="Sam"
+          className={styles.heroImage}
+        />
       </section>
 
-      <section className={styles.projectsContainer}>
+      {/* <section className={styles.projectsContainer}>
         <h2 className={styles.projectsHeader}>Projects</h2>
         <article className={styles.projectsImgContainer}>
           <a
@@ -44,7 +56,7 @@ function Home() {
             <img src={myweather} className={styles.projectsImg} />
           </a>
         </article>
-      </section>
+      </section> */}
 
       <Footer />
     </div>
