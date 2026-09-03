@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Alert from "@mui/material/Alert";
-import Menu from "../components/Menu.jsx";
+import Menu from "../components/menu.jsx";
 import Footer from "../components/Footer.jsx";
 import styles from "../styles/Contact.module.css";
 import emailIcon from "../assets/email.png";

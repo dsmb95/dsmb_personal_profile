@@ -1,4 +1,4 @@
-import Menu from "../components/Menu.jsx";
+import Menu from "../components/menu.jsx";
 import Footer from "../components/Footer.jsx";
 import styles from "../styles/About.module.css";
 import { useState } from "react";
