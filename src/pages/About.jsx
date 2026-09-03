@@ -144,12 +144,12 @@ function About() {
             <div className={styles.introContent}>
               <h3>Hi there! I'm Sam.</h3>
               <p>
-                I have a background in healthcare and my focus is building
-                scalable programs that help solve real-world problems. I
-                specialize in building full-stack applicaitons using the MERN
-                stack (MongoDB, Express.js, React, Node.js). I am incredibly
-                passionate about blending the world of health care and
-                programming to produce solutions to everyday health care
+                I am a full stack developer who has a background in healthcare.
+                I specialize in building full-stack applications using the MERN
+                stack (MongoDB, Express.js, React, Node.js) which is centered around
+                scalable programs that help solve real-world problems. I am
+                incredibly passionate about blending the world of health care
+                and programming to produce solutions to everyday health care
                 problems.
               </p>
             </div>

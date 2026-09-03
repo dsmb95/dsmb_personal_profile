@@ -1,0 +1,79 @@
+.sectionContainer {
+    max-width: 900px;
+    margin: 60px auto;
+}
+
+.contactContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.contactContent {
+    display: flex;
+    justify-content: center;
+    padding: 10px; 
+}
+
+.contactImg {
+    width: 30px;
+    height: 30px;
+    padding: 12px;
+}
+
+.formField {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 650px;
+    margin: 30px auto 0;
+    padding: 32px;
+    background-color: #ffffff;
+    border: 1px solid #dccde2;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(74, 59, 82, 0.12);
+}
+
+.formSection {
+    max-width: 900px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.formIntro {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #36454f;
+    line-height: 1.6;
+}
+
+.formField :global(.MuiTextField-root) {
+    background-color: #ffffff;
+}
+
+.submitButton {
+    align-self: flex-start;
+    background-color: #dccde2!important;
+    color:#6a5475!important;
+    text-transform: none !important;
+    padding: 10px 24px !important;
+}
+
+.submitButton:hover {
+    background-color: #ffffff !important;
+}
+
+@media (max-width: 700px) {
+    .sectionContainer,
+    .formSection {
+        margin: 40px 20px;
+    }
+
+    .contactContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .formField {
+        padding: 22px;
+    }
+}
